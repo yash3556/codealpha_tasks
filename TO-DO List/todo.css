@@ -1,0 +1,191 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("img.jpg");
+            background-size: cover;       
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;      
+            margin: 0;
+            padding: 0;
+            background-attachment: fixed;
+            filter: brightness(1.05) contrast(1.08) saturate(1.2);
+        }
+        .container {
+            max-width: 400px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 24px;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.22), 0 1.5px 4px rgba(0,0,0,0.08);
+            backdrop-filter: blur(24px) saturate(200%);
+            -webkit-backdrop-filter: blur(24px) saturate(200%);
+            background: linear-gradient(135deg, rgba(255,255,255,0.32) 0%, rgba(220,240,255,0.22) 100%);
+            border: 1.5px solid rgba(255,255,255,0.28);
+            transition: box-shadow 0.3s, background 0.3s;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 16px;
+            color: #7c3aed;
+            text-shadow: 0 2px 8px rgba(124, 58, 237, 0.18), 0 1px 0 rgba(255,255,255,0.7);
+            letter-spacing: 1px;
+        }
+        form {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 10px;
+            column-gap: 12px;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: linear-gradient(135deg, rgba(124,58,237,0.28) 0%, rgba(220,220,255,0.38) 100%);
+            color: #4c1d95;
+            font-weight: 600;
+            border: 1.5px solid #a78bfa;
+            transition: background 0.3s;
+        }
+        button {
+            padding: 8px 12px;
+            border: none;
+            background: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            background: #7c3aed;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 18px;
+            border-bottom: 2px solid #a78bfa;
+            border-radius: 10px;
+            background: linear-gradient(90deg, rgba(124,58,237,0.18) 0%, rgba(220,220,255,0.32) 100%);
+            box-shadow: 0 2px 12px rgba(124,58,237,0.16);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            transition: background 0.2s, box-shadow 0.2s;
+            margin-bottom: 14px;
+        }
+        li.completed span {
+            text-decoration: line-through;
+            color: #888;
+            background: linear-gradient(90deg, rgba(85, 26, 188, 0.12) 0%, rgba(51, 29, 110, 0.18) 100%);
+        }
+        .actions button {
+            margin-left: 4px;
+            background: #eee;
+            color: #333;
+            border-radius: 4px;
+            padding: 4px 8px;
+            font-size: 0.9em;
+            background: #a78bfa;
+            color: #4c1d95;
+            border: 1px solid #7c3aed;
+        }
+        .actions button:hover {
+            background: #007bff;
+            color: #fff;
+            border-color: #7c3aed;
+            background: #7c3aed;
+        }
+        .edit-input {
+            flex: 1;
+            font-weight: bold;
+            color: #7c3aed;
+            background: linear-gradient(135deg, rgba(124,58,237,0.18) 0%, rgba(220,220,255,0.28) 100%);       margin-right: 8px;
+            padding: 4px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        li {
+            transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+        }
+        li:hover {
+            background: linear-gradient(90deg, rgba(124,58,237,0.28) 0%, rgba(220,220,255,0.42) 100%);
+            box-shadow: 0 4px 18px rgba(124,58,237,0.22);
+            transform: scale(1.03);
+        }
+        li.completed {
+            transition: background 0.3s, color 0.3s;
+        }
+        .actions button {
+            transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
+        }
+        .actions button:active {
+            transform: scale(0.96);
+        }
+        input[type="text"]:focus, .edit-input:focus {
+            background: linear-gradient(135deg, rgba(124,58,237,0.38) 0%, rgba(220,220,255,0.48) 100%);
+            outline: none;
+            box-shadow: 0 0 0 2px #a78bfa;
+            transition: box-shadow 0.2s, background 0.2s;
+        }
+        button {
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+        }
+        button:active {
+            transform: scale(0.97);
+        }
+        .container {
+            transition: box-shadow 0.3s, background 0.3s, transform 0.2s;
+        }
+        .container:hover {
+                    box-shadow: 0 12px 40px rgba(124,58,237,0.18), 0 2px 8px rgba(0,0,0,0.10);
+                    transform: translateY(-2px) scale(1.01);
+                }
+                /* Make input area more visible */
+                form {
+                    background: linear-gradient(135deg, rgba(124,58,237,0.12) 0%, rgba(220,220,255,0.22) 100%);
+                    box-shadow: 0 2px 8px rgba(124,58,237,0.10);
+                    border-radius: 8px;
+                    padding: 12px;
+                }
+                input[type="text"] {
+                    background: linear-gradient(135deg, #fff 0%, #e0e7ff 100%);
+                    border: 2px solid #7c3aed;
+                    color: #4c1d95;
+                    font-weight: 700;
+                    box-shadow: 0 1px 4px rgba(124,58,237,0.10);
+                }
+                input[type="text"]:focus {
+                    background: #f3f0ff;
+                    box-shadow: 0 0 0 2px #7c3aed;
+                }
+                /* Change color of task text */
+                li span {
+                    color: #7c3aed;
+                    font-weight: 600;
+                }
+                li.completed span {
+                    text-decoration: none;
+                    color: #888;
+                    background: linear-gradient(90deg, rgba(85, 26, 188, 0.12) 0%, rgba(51, 29, 110, 0.18) 100%);
+                }
+               .task-item span {
+    color: #dd52ea;  
+    font-size: 16px;
+    font-weight: 500;
+}
+.completed span {
+    color: #b565d9;  
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+                
